@@ -62,10 +62,10 @@
 
                 if (hit) { 
                     audio_hit.play();
-                    setTimeout(function() {audio_scream.play();}, 400);
                     ctx.drawImage(img_b0, dx, dy, dw, dh);
                     setTimeout(function() {
                         ctx.drawImage(img_b1, dx, dy, dw, dh);}, 150);
+                    setTimeout(function() {audio_scream.play();}, 400);
                     setTimeout(function() {
                         ctx.drawImage(img_nw, dx, dy, dw, dh);
                         setTimeout(function() {
