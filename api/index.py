@@ -12,5 +12,5 @@ def hello_world():
 def hit():
     requests.post("https://satanist.pythonanywhere.com/niitowainagure")
     return redirect("/")
-if __name__ == "__main__":
-    app.run()
+#if __name__ == "__main__":
+#    app.run()
