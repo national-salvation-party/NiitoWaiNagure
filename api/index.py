@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request,url_for,redirect,jsonify
+from flask import Flask, render_template,redirect
 import requests
 
 app = Flask(__name__)
@@ -12,6 +12,5 @@ def hello_world():
 def hit():
     requests.post("https://satanist.pythonanywhere.com/niitowainagure")
     return redirect("/")
-
 #if __name__ == "__main__":
 #    app.run()
