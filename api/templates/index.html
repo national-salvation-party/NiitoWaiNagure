@@ -63,16 +63,14 @@
                 if (hit) { 
                     audio_hit.play();
                     ctx.drawImage(img_b0, dx, dy, dw, dh);
-                    setTimeout(function() {
-                        ctx.drawImage(img_b1, dx, dy, dw, dh);
-                        setTimeout(function() {audio_scream.play();
+                    ctx.drawImage(img_b1, dx, dy, dw, dh);                        
+                    setTimeout(function() {audio_scream.play();
+                        setTimeout(function() {
+                            ctx.drawImage(img_nw, dx, dy, dw, dh);
                             setTimeout(function() {
-                                ctx.drawImage(img_nw, dx, dy, dw, dh);
-                                setTimeout(function() {
-                                    location.href="/hit", 10});        
-                            }, 1200);
-                        }, 250);
-                    }, 150);
+                                location.href="/hit", 10});        
+                        }, 1200);
+                    }, 300);
                 }
             });  
         </script>
